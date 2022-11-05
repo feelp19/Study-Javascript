@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let weight
+
+        console.log(typeof weight)
+
+        let student = {
+            name: "Felipe",
+            age: 27,
+            stars: 4.8,
+            isSubscribed: true,
+            weight: 90.1
+        }
+
+        console.log(typeof student)
+
+        console.log(`${student.name} tem ${student.age} de idade e pesa ${student.weight} KG`)
+
+        let students = []
+
+        students = [student]
+
+        console.log(students)
+
+        console.log(students[0])
+
+        const john = {
+            name: "John",
+            age: 23,
+            weight: 80.1,
+            isSubscribed: true
+        }
+
+        students[1] = john
+        console.log(students[1])
+
+    </script>
+</body>
+</html>
