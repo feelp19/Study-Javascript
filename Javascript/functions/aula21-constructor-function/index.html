@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor function</title>
+</head>
+<body>
+    <script>
+
+        /*
+            FUNCTION CONSTRUCTOR
+                * expression NEW
+                * create a new OBJECT
+                * THIS keyword
+        */
+        function Person(name, age, humor, married) {
+            this.name = name,
+            this.age = age,
+            this.humor = humor,
+            this.married = married
+            this.walk = () => {
+                return `${this.name} esta andando`
+            }
+        }
+        const felipe = new Person("Felipe", 27, "happy", true) //return a object
+        const taina = new Person("Taina", 25, "happy", true)
+        console.log(felipe, taina, felipe.walk(), taina.walk())
+    </script>
+</body>
+</html>
