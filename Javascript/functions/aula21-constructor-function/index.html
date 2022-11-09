@@ -27,6 +27,29 @@
         const felipe = new Person("Felipe", 27, "happy", true) //return a object
         const taina = new Person("Taina", 25, "happy", true)
         console.log(felipe, taina, felipe.walk(), taina.walk())
+
+        //create a constructor function to "connect to SQL"
+        function ConnectSQL(db, password, port){
+            this.db = db,
+            this.password = password,
+            this.port = port
+        }
+
+        //atribuition of values
+        const db = "127.0.0.1"
+        const password = ""
+        const port = 8080
+
+        const connection = new ConnectSQL(db, password, port) // assignment the values on arguments function
+
+        console.log(connection) // return a object
+
+        const checkConnection = () => { //methods to verify if connected
+            if(!connection) console.log("ERROR")
+            else console.log(`You're Connected in ${connection.db}:${connection.port}`)
+        }
+
+        checkConnection() //call function
     </script>
 </body>
 </html>
