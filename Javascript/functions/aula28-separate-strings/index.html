@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Manipulando Strings e Arrays
+
+        //Separe um texto que contem espacos, em um novo array onde cada texto e uma posicao do array. Depois disso, transforme o array em um texto e onde eram espacos, coloque _
+        let phrase = "Eu quero viver o amor!"
+        let myArray = phrase.split(" ") //remove os espacos em branco na string -> retorna um array
+        let phraseWithUnderscore = myArray.join("_") //adiciona o separador na string
+        console.log(phraseWithUnderscore)
+    </script>
+</body>
+</html>
